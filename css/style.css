@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+}
+.container {
+  display: block;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+.carousel {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+}
+img {
+  margin: auto;
+  max-width: 90%;
+  max-height: 300px;
+  box-shadow: 10px 10px 5px #888888;
+}
+.border {
+  border: 1px solid black;
+}
+.buttons {
+  text-align: center;
+}
