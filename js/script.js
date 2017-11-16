@@ -20,6 +20,8 @@ function newImg(direction) {
 }
 
 nextBtn.addEventListener("click", function() {
+  const img = document.getElementsByTagName("img")
+  console.log(img)
   newImg("next")
 })
 
