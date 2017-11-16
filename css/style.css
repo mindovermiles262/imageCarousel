@@ -14,14 +14,44 @@ h1 {
   text-align: center;
 }
 img {
+  position: relative;
   margin: auto;
   max-width: 90%;
   max-height: 300px;
   box-shadow: 10px 10px 5px #888888;
+  animation-name: slidein;
+  animation-duration: 0.15s;
 }
 .border {
   border: 1px solid black;
 }
 .buttons {
   text-align: center;
+}
+
+@keyframes slideout { 
+  /* Slide img to right */
+  10%  {left: 10px; opacity: 0.9;}
+  20%  {left: 20px; opacity: 0.8;}
+  30%  {left: 30px; opacity: 0.7;}
+  40%  {left: 40px; opacity: 0.6;}
+  50%  {left: 50px; opacity: 0.5;}
+  60%  {left: 60px; opacity: 0.4;}
+  70%  {left: 70px; opacity: 0.3;}
+  80%  {left: 80px; opacity: 0.2;}
+  90%  {left: 90px; opacity: 0.1;}
+  100%  {left: 100px; opacity: 0;}
+}
+@keyframes slidein {
+  /* Slide img in from left */
+  10%  {right: 100px; opacity: 0.1;}
+  20%  {right: 90px; opacity: 0.2;}
+  30%  {right: 80px; opacity: 0.3;}
+  40%  {right: 70px; opacity: 0.4;}
+  50%  {right: 60px; opacity: 0.5;}
+  60%  {right: 50px; opacity: 0.6;}
+  70%  {right: 40px; opacity: 0.7;}
+  80%  {right: 30px; opacity: 0.8;}
+  90%  {right: 20px; opacity: 0.9;}
+  100%  {right: 10px; opacity: 1;}
 }
