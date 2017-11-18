@@ -26,16 +26,16 @@ img {
 .buttons {
   text-align: center;
 }
-.slideout {
-  animation-name: slideout;
+.slideRight {
+  animation-name: slideRight;
   animation-duration: 0.15s;
 }
-.slidein {
-  animation-name: slidein;
+.slideLeft {
+  animation-name: slideLeft;
   animation-duration: 0.15s;
 }
 
-@keyframes slideout { 
+@keyframes slideRight { 
   /* Slide img to right */
   10%  {left: 10px; opacity: 0.9;}
   20%  {left: 20px; opacity: 0.8;}
@@ -48,16 +48,16 @@ img {
   90%  {left: 90px; opacity: 0.1;}
   100%  {left: 100px; opacity: 0;}
 }
-@keyframes slidein {
+@keyframes slideLeft {
   /* Slide img in from left */
-  10%  {right: 100px; opacity: 0.1;}
-  20%  {right: 90px; opacity: 0.2;}
-  30%  {right: 80px; opacity: 0.3;}
-  40%  {right: 70px; opacity: 0.4;}
-  50%  {right: 60px; opacity: 0.5;}
-  60%  {right: 50px; opacity: 0.6;}
-  70%  {right: 40px; opacity: 0.7;}
-  80%  {right: 30px; opacity: 0.8;}
-  90%  {right: 20px; opacity: 0.9;}
-  100%  {right: 10px; opacity: 1;}
+  10%  {right: 10px; opacity: 0.9;}
+  20%  {right: 20px; opacity: 0.8;}
+  30%  {right: 30px; opacity: 0.7;}
+  40%  {right: 40px; opacity: 0.6;}
+  50%  {right: 50px; opacity: 0.5;}
+  60%  {right: 60px; opacity: 0.4;}
+  70%  {right: 70px; opacity: 0.3;}
+  80%  {right: 80px; opacity: 0.2;}
+  90%  {right: 90px; opacity: 0.1;}
+  100%  {right: 100px; opacity: 0;}
 }
