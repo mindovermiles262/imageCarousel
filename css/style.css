@@ -1,18 +1,22 @@
 h1 {
   text-align: center;
 }
-.container {
+
+#container {
   display: block;
   width: 80%;
   height: 400px;
   margin: auto;
 }
-.carousel {
+
+#carousel {
   display: flex;
   height: 90%;
   width: 100%;
   text-align: center;
+  border: 1px solid black;
 }
+
 img {
   position: relative;
   margin: auto;
@@ -20,44 +24,45 @@ img {
   max-height: 300px;
   box-shadow: 10px 10px 5px #888888;
 }
-.border {
-  border: 1px solid black;
-}
-.buttons {
+
+#buttons {
   text-align: center;
 }
+
 .slideRight {
   animation-name: slideRight;
   animation-duration: 0.15s;
 }
+
 .slideLeft {
   animation-name: slideLeft;
   animation-duration: 0.15s;
 }
 
-@keyframes slideRight { 
+@keyframes slideRight {
   /* Slide img to right */
-  10%  {left: 10px; opacity: 0.9;}
-  20%  {left: 20px; opacity: 0.8;}
-  30%  {left: 30px; opacity: 0.7;}
-  40%  {left: 40px; opacity: 0.6;}
-  50%  {left: 50px; opacity: 0.5;}
-  60%  {left: 60px; opacity: 0.4;}
-  70%  {left: 70px; opacity: 0.3;}
-  80%  {left: 80px; opacity: 0.2;}
-  90%  {left: 90px; opacity: 0.1;}
-  100%  {left: 100px; opacity: 0;}
+  10%  {left: 10px;  opacity: 0.9;}
+  20%  {left: 20px;  opacity: 0.8;}
+  30%  {left: 30px;  opacity: 0.7;}
+  40%  {left: 40px;  opacity: 0.6;}
+  50%  {left: 50px;  opacity: 0.5;}
+  60%  {left: 60px;  opacity: 0.4;}
+  70%  {left: 70px;  opacity: 0.3;}
+  80%  {left: 80px;  opacity: 0.2;}
+  90%  {left: 90px;  opacity: 0.1;}
+  100% {left: 100px; opacity: 0.0;}
 }
+
 @keyframes slideLeft {
   /* Slide img in from left */
-  10%  {right: 10px; opacity: 0.9;}
-  20%  {right: 20px; opacity: 0.8;}
-  30%  {right: 30px; opacity: 0.7;}
-  40%  {right: 40px; opacity: 0.6;}
-  50%  {right: 50px; opacity: 0.5;}
-  60%  {right: 60px; opacity: 0.4;}
-  70%  {right: 70px; opacity: 0.3;}
-  80%  {right: 80px; opacity: 0.2;}
-  90%  {right: 90px; opacity: 0.1;}
-  100%  {right: 100px; opacity: 0;}
+  10%  {right: 10px;  opacity: 0.9;}
+  20%  {right: 20px;  opacity: 0.8;}
+  30%  {right: 30px;  opacity: 0.7;}
+  40%  {right: 40px;  opacity: 0.6;}
+  50%  {right: 50px;  opacity: 0.5;}
+  60%  {right: 60px;  opacity: 0.4;}
+  70%  {right: 70px;  opacity: 0.3;}
+  80%  {right: 80px;  opacity: 0.2;}
+  90%  {right: 90px;  opacity: 0.1;}
+  100% {right: 100px; opacity: 0.0;}
 }

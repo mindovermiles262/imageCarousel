@@ -1,21 +1,24 @@
 <html>
+
 <head>
+  <meta charset="utf-8">
   <title>Image Carousel</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
   <h1>Image Carousel</h1>
-  <div class="container">
-    <div class="carousel border">
-      <img src="img/1.jpg" alt="Bread">
+  <div id="container">
+    <div id="carousel">
+      <img id="currentImage" src="img/1.jpg" alt="Bread">
     </div>
-    <div class="buttons">
-      <button id="prev">Previous</button>
-      <button id="next">Next</button>
+    <div id="buttons">
+      <button id="left">Previous</button>
+      <button id="right">Next</button>
     </div>
   </div>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
